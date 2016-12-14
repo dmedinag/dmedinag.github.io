@@ -1,5 +1,7 @@
 $( document ).ready(function() {
     $('.esp').hide();
+    $('.cs').hide();
+    $('.mtb').hide();
 });
 
 $("#switchs").click(function(){
@@ -10,4 +12,14 @@ $("#switchs").click(function(){
 $("#switche").click(function(){
     $('.esp').hide();
     $('.eng').show();
+});
+
+$(".switchcs").click(function(){
+    $('.mtb').hide();
+    $('.cs').show();
+});
+
+$(".switchmtb").click(function(){
+    $('.cs').hide();
+    $('.mtb').show();
 });
